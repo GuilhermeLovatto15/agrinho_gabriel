@@ -1,0 +1,115 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navigation-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+.navigation-item {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navigation-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+.navigation-link:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.month {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.month-title {
+    color: #4CAF50;
+}
+
+.plant-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plant-item {
+    background-color: #e8e8e8;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.cultivation-info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navigation-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation-item {
+        margin: 10px 0;
+    }
+    .navigation-link {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 10px 0;
+    }
+    .main-content {
+        padding: 10px;
+    }
+    .month {
+        padding: 10px;
+    }
+    .plant-item {
+        padding: 5px;
+    }
+}
